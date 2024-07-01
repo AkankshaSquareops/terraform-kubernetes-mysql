@@ -47,7 +47,7 @@ module "mysql" {
     environment                      = local.environment
     architecture                     = "replication"
     custom_database                  = "test_db"
-    storage_class_name               = "gp2"
+    storage_class_name               = "gp3"
     custom_user_username             = local.mysqldb_custom_credentials_enabled ? "" : local.custom_user_username
     primary_db_volume_size           = "10Gi"
     secondary_db_volume_size         = "10Gi"
